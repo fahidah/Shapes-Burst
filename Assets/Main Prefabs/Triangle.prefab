@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 4054061164431257937}
   - component: {fileID: 2142683478708762419}
   - component: {fileID: 8347957791914901882}
+  - component: {fileID: -6479296499248841488}
+  - component: {fileID: 8035579445429892167}
   - component: {fileID: 1637585654570750548}
   m_Layer: 0
   m_Name: Triangle
@@ -84,6 +86,35 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!54 &-6479296499248841488
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 286738701526614329}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &8035579445429892167
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 286738701526614329}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.0034000012, y: 0.017623749, z: 0.02027094}
+  m_Center: {x: 4.289957e-18, y: 0.0027161739, z: -0.00030187896}
 --- !u!114 &1637585654570750548
 MonoBehaviour:
   m_ObjectHideFlags: 0
