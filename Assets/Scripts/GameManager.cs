@@ -5,12 +5,12 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public List<GameObject> shapes;
-    private float spawnRate = 1.0f; 
+    private float spawnRate = 0.5f; 
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        StartCoroutine(SpawnShapes());
     }
 
     // Update is called once per frame

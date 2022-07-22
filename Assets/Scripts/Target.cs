@@ -10,21 +10,26 @@ public class Target : MonoBehaviour
     private float ySpawnPos = 4;
     private float minSpeed = 12;
     private float maxSpeed = 16;
-    private float maxTorque = 10;
+    private float maxTorque = 5;
 
     // Start is called before the first frame update
     void Start()
     {
-        shapesRB = GetComponent<Rigidbody>();
-        shapesRB.AddForce(RandomForce(), ForceMode.Impulse);
-        shapesRB.AddTorque(RandomTorque(), RandomTorque(), RandomTorque(), ForceMode.Impulse);
-        transform.position = RandomSpawnPosition();
+        GameStart();
     }
 
     // Update is called once per frame
     void Update()
     {
 
+    }
+
+    void GameStart()
+    {
+        shapesRB = GetComponent<Rigidbody>();
+        shapesRB.AddForce(RandomForce(), ForceMode.Impulse);
+        shapesRB.AddTorque(RandomTorque(), RandomTorque(), RandomTorque(), ForceMode.Impulse);
+        transform.position = RandomSpawnPosition();
     }
 
     Vector3 RandomSpawnPosition()
